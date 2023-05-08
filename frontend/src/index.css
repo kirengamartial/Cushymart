@@ -1,0 +1,75 @@
+main {
+  min-height: 80vh;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+}
+
+.carousel img {
+  height: 300px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel a {
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+}
+
+.flutter{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 
+
+}
+
+/* #start-payment-button {
+    cursor: pointer;
+    text-transform: none;
+    background-color: #2C2E2F;
+    position: relative;
+    color: #fff;
+    padding: 0.7rem 7.375rem;
+    font-weight: 500;
+    font-size: 0.91562rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: none;
+    overflow: hidden;
+    transition: all .1s ease-in;
+} */
