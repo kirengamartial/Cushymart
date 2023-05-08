@@ -1,0 +1,45 @@
+{
+    "name": "cashy-purchase-3",
+    "version": "1.0.0",
+    "description": "MERN shopping cart app",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node backend/server",
+        "server": "nodemon backend/server",
+        "client": "npm start --prefix frontend",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "data:import": "node backend/seeder",
+        "data:destroy": "node backend/seeder -d",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    },
+    "author": "Martial",
+    "license": "MIT",
+    "dependencies": {
+        "@sendgrid/mail": "^7.7.0",
+        "africastalking": "^0.5.5",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.2",
+        "colors": "^1.4.0",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "dotenv": "^14.2.0",
+        "express": "^4.17.2",
+        "express-async-handler": "^1.2.0",
+        "flutterwave-node-v3": "^1.0.9",
+        "http": "^0.0.1-security",
+        "http-proxy-middleware": "^2.0.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongodb": "^5.3.0",
+        "mongoose": "^6.1.7",
+        "morgan": "^1.10.0",
+        "multer": "^1.4.4",
+        "nodemailer": "^6.7.5",
+        "nodemailer-sendgrid": "^1.0.3",
+        "yarn": "^1.22.19"
+    },
+    "devDependencies": {
+        "concurrently": "^7.0.0",
+        "nodemon": "^2.0.15"
+    }
+}
