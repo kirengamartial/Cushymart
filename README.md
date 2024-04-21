@@ -27,7 +27,7 @@ This project is part of my [MERN Stack From Scratch | eCommerce Platform] . It i
 
 ### Env Variables
 
-In your `.env` and add the following
+In your `.env` add the following
 
 ```
 NODE_ENV = development
