@@ -31,116 +31,15 @@ const orderSchema = mongoose.Schema(
       required: true,
     },
     paymentResult: {
-      status: {
-        type: String,
-       
-      },
-      message: {
-        type: String,
-       
-      },
-      data: {
-        id: {
-          type: String,
-          
-        },
-        tx_ref: {
-          type: String,
-         
-        },
-        flw_ref: {
-          type: String,
-         
-        },
-        device_fingerprint: {
-          type: String,
-         
-        },
-        amount: {
-          type: String,
-         
-        },
-        currency: {
-          type: String,
-         
-        },
-        charged_amount: {
-          type: String,
-          
-        },
-        app_fee: {
-          type: String,
-          
-        },
-        merchant_fee: {
-          type: String,
-         
-        },
-        processor_response: {
-          type: String,
-          
-        },
-        auth_model: {
-          type: String,
-         
-        },
-        ip: {
-          type: String,
-         
-        },
-        narration: {
-          type: String,
-         
-        },
-        status: {
-          type: String,
-         
-        },
-        payment_type: {
-          type: String,
-         
-        },
-        created_at: {
-          type: String,
-         
-        },
-        account_id: {
-          type: String,
-         
-        },
-        meta: {
-          __CheckoutInitAddress: {
-            type: String,
-           
-          }
-        },
-        amount_settled: {
-          type: String,
-         
-        },
-        customer: {
-          id: {
-            type: String,
-           
-          },
-          name: {
-            type: String,
-           
-          },
-          phone_number: {
-            type: String,
-            
-          },
-          email: {
-            type: String,
-           
-          },
-          created_at: {
-            type: String,
-           
-          }
-        }
-      }
+      id: { type: String },
+      status: { type: String },
+      update_time: { type: String },
+      email_address: { type: String },
+    },
+    itemsPrice: {
+      type: Number,
+      required: true,
+      default: 0.0,
     },
     taxPrice: {
       type: Number,
@@ -177,8 +76,8 @@ const orderSchema = mongoose.Schema(
   {
     timestamps: true,
   }
-)
+);
 
-const Order = mongoose.model('Order', orderSchema)
+const Order = mongoose.model('Order', orderSchema);
 
 export default Order;
